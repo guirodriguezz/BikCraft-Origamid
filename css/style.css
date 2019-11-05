@@ -169,6 +169,10 @@ img {
   padding: 20px;
 }
 
+.produtos_icone img {
+  margin: 0px auto;
+}
+
 .call {
   padding-top: 40px;
   text-align: center;
@@ -259,4 +263,56 @@ img {
       max-width: 400px;
   }
 
+  /*Footer*/
+
+  .footer {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 20px 0;
+  }
+
+  .footer h3 {
+    font-size:  18px;
+    line-height: 25px;
+    color: #fec63e;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+  }
+
+  .footer h3:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fec63e;
+    margin: 6px 0 12px 0;
+  }
+
+  .footer_historia {
+    padding-right: 40px;
+  }
+
+  .footer_contato ul li {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .footer_social ul li{
+    display: inline-flex;
+    margin-right: 10px;
+  }
+
+  .footer_social ul li a {
+    border: 3px solid #fec63e;;
+    display: block;
+    padding: 6px 8px;
+    margin-right: 10px;
+  }
+
+  .footer_social ul li a:hover {
+    border: 3px solid #fff;
+  }
   
