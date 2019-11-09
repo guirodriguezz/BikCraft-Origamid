@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/responsivo.css" />
+    <script>document.documentElement.classList.add("js");</script>
   </head>
 
   <body>
@@ -28,15 +29,15 @@
     </header>
     <section class="introducao">
       <div class="container">
-        <h1>Bicicletas Feitas a Mão</h1>
-        <blockquote class="quote_externo">
+        <h1 data-anime="400" class="fadeInDown">Bicicletas Feitas a Mão</h1>
+        <blockquote class="quote_externo fadeInDown" data-anime="800">
           <p>
             "Não tenha nada em sua casa que você não considere útil ou acredita
             ser bonito."
           </p>
           <cite>William Morris</cite>
         </blockquote>
-        <a href="produtos.html" class="btn">Orçamento</a>
+        <a href="produtos.html" class="btn" data-anime="1200">Orçamento</a>
       </div>
     </section>
 
@@ -80,8 +81,8 @@
       </div>
     </section>
     <section class="portfolio">
-      <div class="container">
         <h2 class="subtitulo">Portfólio</h2>
+      <div class="container" data-slide="port">
         <ul class="portfolio_lista">
           <li class="grid-8">
             <img src="/img/portfolio/retro.jpg" alt="Bicicleta Retro" />
@@ -93,11 +94,22 @@
             <img src="/img/portfolio/esporte.jpg" alt="Bicicleta Esporte" />
           </li>
         </ul>
-        <div class="call">
-          <p>Conheça mais nosso portfólio</p>
-          <a href="portfolio.html" class="btn">Portfólio</a>
-        </div>
+        <ul class="portfolio_lista">
+          <li class="grid-8">
+            <img src="/img/portfolio/passeio.jpg" alt="Bicicleta Passeio" />
+          </li>
+          <li class="grid-8">
+            <img src="/img/portfolio/retro.jpg" alt="Bicicleta Retro" />
+          </li>
+          <li class="grid-16">
+            <img src="/img/portfolio/esporte.jpg" alt="Bicicleta Esporte" />
+          </li>
+        </ul>
       </div>
+          <div class="call">
+            <p>Conheça mais nosso portfólio</p>
+            <a href="portfolio.html" class="btn">Portfólio</a>
+          </div>
     </section>
     <section class="qualidade container">
       <h2 class="subtitulo">Qualidade</h2>
@@ -127,13 +139,25 @@
         <a href="sobre.html" class="btn btn_preto">Sobre</a>
       </div>
     </section>
-    <section class="quebra">
-      <blockquote class="quote_externo container">
+    <section class="quebra" data-slide="quote">
+      <blockquote class="quote_externo">
         <p>
           "O verdadeiro segredo da felicidade está em ter um genuíno interesse
           por todos os detalhes da vida cotidiana."
         </p>
         <cite>William Morris</cite>
+      </blockquote>
+      <blockquote class="quote_externo">
+        <p>
+          "Difícil é ganhar um amigo em uma hora; fácil é ofendê-lo em um minuto."
+        </p>
+        <cite>Provérbio Chinês</cite>
+      </blockquote>
+      <blockquote class="quote_externo">
+        <p>
+          "Aquele que não tem confiança nos outros, não lhes pode ganhar a confiança."
+        </p>
+        <cite>Lao-Tsé</cite>
       </blockquote>
     </section>
     <footer>
@@ -154,19 +178,29 @@
               </li>
               <li>- contato@bikcraft.com</li>
               <li>- São Paulo - SP</li>
-            </ul> 
+            </ul>
           </div>
           <div class="grid-4 footer_social">
             <h3>Redes Sociais</h3>
             <ul>
               <li>
-                <a href="http://facebook.com" target="_blank"><img src="/img/redes-sociais/facebook.svg"></a>
-                <a href="http://instagram.com" target="_blank"><img src="/img/redes-sociais/instagram.svg"></a>
-                <a href="http://twitter.com" target="_blank"><img src="/img/redes-sociais/twitter.svg"></a>
-            </ul> 
+                <a href="http://facebook.com" target="_blank"
+                  ><img src="/img/redes-sociais/facebook.svg"
+                /></a>
+                <a href="http://instagram.com" target="_blank"
+                  ><img src="/img/redes-sociais/instagram.svg"
+                /></a>
+                <a href="http://twitter.com" target="_blank"
+                  ><img src="/img/redes-sociais/twitter.svg"
+                /></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </footer>
+    <script src="/js/simple-slide.js"></script>
+    <script src="/js/simple-anime.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
